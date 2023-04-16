@@ -1,0 +1,144 @@
+@media(max-width: 800px) {
+
+  .menuToggle {
+    width: 36px;
+    height: 36px;
+    cursor: pointer;;
+    position: relative;
+  }
+
+  .menuToggle span {
+    width: 100%;
+    height: 5px;
+    background: var(--main_color);
+    border-radius: 10px;
+    position: absolute;
+  }
+
+  .menuToggle span:nth-child(1) {
+    width: 60%;
+    top: 0;
+    right: 0;
+  }
+
+  .menuToggle span:nth-child(2) {
+    width: 60%;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+  }
+  
+  .menuToggle span:nth-child(3) {
+    width: 60%;
+    bottom: 0;
+    right: 0;
+  }
+
+  .menuToggle span.active:nth-child(1) {
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+  .menuToggle span.active:nth-child(2) {
+    width: 0%;
+    opacity: 0;
+    
+  }
+  
+  .menuToggle span.active:nth-child(3) {
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+
+  .navRight {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background: var(--white_color);
+    box-shadow: 0 0 5px var(--shadow_color);
+    padding: 40px 0;
+    gap: 100px;
+    position: fixed;
+    top: 70px;
+    right: -110%;
+    z-index: 99;
+    border-radius: 0 0 0 150px;
+  }
+
+  .navRight.active {
+    right: 0;
+  }
+
+  .navLinkBox {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .navLinkBox li {
+    width: 100%;
+    display: flex;
+    list-style: none;
+  }
+  
+  .navLinkBox li a {
+    width: 100%;
+    padding: 12px;
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--text_color);
+    letter-spacing: 0.5px;
+    text-transform: capitalize;
+    text-decoration: none;
+    position: relative;
+    text-align: center;
+    font-family: 'Merienda', sans-serif;
+  }
+  
+  .navLinkBox li a.active,
+  .navLinkBox li a:hover {
+    background: var(--main_color);
+    color: var(--white_color);
+  }
+
+
+
+
+  .heroSection {
+    width: 100%;
+    height: 800px;
+    min-height: 90vh;
+    padding: 20px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .heroImg {
+    width: 340px;
+    height: 340px;
+    border-radius: 100px 10px 100px 10px;
+    box-shadow: inset 0 0 100px 10px var(--main_color);
+  }
+
+  .heroNameHeading {
+    font-size: 50px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    color: var(--text_color);
+    font-family: 'Merienda', cursive;
+  }
+}
