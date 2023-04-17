@@ -1,0 +1,154 @@
+/* Mobile Nav Toggle*/
+
+#MenuBtn {
+  position: fixed;
+  top: 25px;
+  right: 25px;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  color: var(--bgColor);
+  background-color: var(--themeColor);
+  text-align: center;
+  line-height: 42px;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 20%);
+  display: none;
+  z-index: 999;
+}
+
+@media only screen and (max-width:1050px) {
+  header {
+    left: -300px;
+  }
+
+  header .footer {
+    left: -300px;
+  }
+
+  #MenuBtn {
+    display: block;
+  }
+}
+
+/* Header Toggle */
+.mobile-nav-active header {
+  left: 0;
+}
+
+.mobile-nav-active .footer {
+  left: 0;
+}
+
+/*   Main Section  */
+
+@media only screen and (max-width:1050px) {
+  main {
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width:670px) {
+  #home {
+    padding: 30px;
+  }
+
+  #home .home-row h1 {
+    font-size: 35px;
+    letter-spacing: 0;    
+    line-height: 50px;
+  }
+
+  #home .home-row p {
+    font-size: 20px;
+    font-weight: 400;
+  }
+}
+
+
+@media only screen and (max-width:850px) {
+  #about {
+    padding: 50px 10px;
+  }
+
+  #about .divider ~ p {
+    font-size: 14px;
+    letter-spacing: 0px;
+    text-align: justify;    
+  }
+
+  #about .about-col {
+    flex-direction: column;
+  }
+
+  #about .about-col .img-col img {
+    width: 50%;  
+  }
+
+  #about .about-col .info-col h2 {    
+    font-weight: 600;
+    font-size: 25px;
+    letter-spacing: 0;   
+  }
+
+  #about .about-col .info-col .icon-list-col {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  #about .about-col .info-col .icon-list-col .icon-list ul li {
+    margin: 10px 0;
+  }
+
+  #about .about-col .info-col .icon-list-col .icon-list ul li strong {
+    font-weight: 500;
+    margin-right: 0px;
+  }
+
+  #about .about-col .info-col .icon-list-col .icon-list ul li span {   
+    font-weight: 400;
+    font-size: 13px;
+  }  
+}
+
+/*   Facts Section  */
+
+
+@media only screen and (max-width:700px) {
+  #fact {
+    padding: 40px 15px;
+  }
+
+  #fact .fact-row {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+}
+
+@media only screen and (max-width:370px) {
+  #fact .fact-row .fact-box i {    
+    font-size: 30px;
+  }
+  
+  #fact .fact-row .fact-box strong {    
+    font-size: 20px;       
+  }
+  
+  #fact .fact-row .fact-box p {
+    font-weight: 400;
+    font-size: 14px;
+  }
+}
+
+/*Skills Section */
+
+@media only screen and (max-width:450px) {
+  #skill {
+    padding: 50px 15px;
+  }
+
+  #skill .skill-row {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+  }
+}
