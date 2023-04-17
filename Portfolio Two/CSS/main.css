@@ -345,5 +345,145 @@ main {
 /*Resume Section*/
 
 #resume {
-  padding: 70px 30px;
+  padding: 70px 30px;  
 }
+
+.resume .resume-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 35px;
+}
+
+.resume .resume-row .resume-cols {
+  flex-basis: 50%;
+}
+
+.resume .resume-row .resume-cols h2 {
+  color: var(--sideBGColor);
+  font-weight: 600;
+  font-size: 25px;
+  margin: 15px 0;
+}
+
+.resume .resume-row .resume-cols .my-info {
+  padding: 0 20px 0 20px;
+  margin: 20px 0;
+  border-left: 2px solid var(--themeColor);
+  position: relative;
+}
+
+.resume .resume-row .resume-cols .my-info::before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: -10px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 2px solid var(--themeColor);
+  background-color: var(--bgColor);
+}
+
+.resume .resume-row .resume-cols h3 {
+  color: var(--sideBGColor);
+  font-size: 17px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.resume .resume-row .resume-cols .my-info p {
+  color: var(--textColor);
+  font-size: 15px;
+  font-weight: 600;
+  font-style: italic;
+  margin: 10px 0;
+}
+
+.resume .resume-row .resume-cols .my-info ul li {
+  margin: 10px 0;
+  margin-left: 20px;
+  color: var(--textColor);
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.resume .resume-row .resume-cols .my-edu {
+  padding: 0 20px 0 20px;
+  border-left: 2px solid var(--themeColor);
+  position: relative;
+}
+
+.resume .resume-row .resume-cols .my-edu::before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: -10px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 2px solid var(--themeColor);
+  background-color: var(--bgColor);
+}
+
+.resume .resume-row .resume-cols .sp-box {
+  padding: 4px 22px;
+  background-color: lightblue;
+  color: var(--textColor);
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: 600;
+  font-style: italic;
+  margin: 15px 0;
+  display: inline-block;
+}
+
+.resume .resume-row .resume-cols .my-edu span + p {
+  color: var(--textColor);
+  font-size: 15px;
+  font-weight: 500;
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+.resume .resume-row .resume-cols .my-edu span + p + p {
+  color: var(--textColor);
+  font-size: 15px;
+  font-weight: 500;
+  padding-bottom: 15px;
+}
+
+.resume .resume-row .resume-cols .pro-exp {
+  padding: 0 20px 10px;
+  border-left: 2px solid var(--themeColor);
+  position: relative;
+}
+
+.resume .resume-row .resume-cols .pro-exp::before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: -10px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 2px solid var(--themeColor);
+  background-color: var(--bgColor);
+}
+
+.resume .resume-row .resume-cols .pro-exp p {
+  color: var(--textColor);
+  font-size: 17px;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.resume .resume-row .resume-cols .pro-exp ul li {
+  margin: 10px 0;
+  margin-left: 20px;
+  color: var(--textColor);
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/*Portfolio Section*/
