@@ -168,3 +168,43 @@
     flex-basis: 100%;
   }  
 }
+
+/*Service Section */
+
+@media only screen and (max-width:850px) {
+  #service {
+    padding: 50px 15px;
+  }
+
+  #service .service-row {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+  }
+}
+
+@media only screen and (max-width:550px) {
+  #service .service-row {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 15px;
+  }
+}
+
+/*Contact Section */
+
+@media only screen and (max-width:800px) {
+  #contact {
+    padding: 50px;
+  }
+  
+  #contact .contact-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media only screen and (max-width:500px) {
+  #contact {
+    padding: 50px 10px;
+  } 
+  
+}
